@@ -75,12 +75,6 @@ app.get('/help', function (req, res) {
 })
    })
    })
- // res.send({
-   //   forcast:'its is snowing',
-     // location:'sembanarkoil',
-      //address:req.query.address
-  //})
-//})
 
   app.get('*',(req,res)=>{
      res.render('404',{
@@ -93,4 +87,4 @@ app.get('/help', function (req, res) {
  
 app.listen(3000,()=>{
     console.log("server is port 3000")
-})//nodemon src/app.js -e js,hbs
+})
