@@ -31,14 +31,14 @@ app.get('',(req,res)=>{
 
 app.get('/about', function (req, res) {
   res.render('about',{
-    title:'About me',
+    title:'About Me',
     name:'Vasanth'
 
   })
 })
 app.get('/help', function (req, res) {
     res.render('help',{
-      helptext:'I need some help',
+      helptext:'Follow this Instruction:',
       title:'Help',
       name:'Vasanth'
     })
@@ -54,7 +54,7 @@ app.get('/help', function (req, res) {
  app.get('/weather',(req,res)=>{
    if(!req.query.address){
      return res.send({
-       error:'you must provide the coorect answer'
+       error:'You must provide the correct Location'
      })
    }
    geocode(req.query.address,(error,{latitude,longitude,location}={})=>{
@@ -87,4 +87,4 @@ app.get('/help', function (req, res) {
  
 app.listen(3000,()=>{
     console.log("server is port 3000")
-})
+})//nodemon src/app.js -e js,hbs

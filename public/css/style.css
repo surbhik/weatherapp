@@ -20,12 +20,16 @@ footer{
     padding: 16px 0;
 }
 header{
+   
     margin-top: 16px;
     margin-bottom: 48px;
 }
 h1{
+   
     font-size: 64px;
     margin-bottom: 16px;
+    
+   
 }
 header a{
     color:#888888;
@@ -33,15 +37,20 @@ header a{
     text-decoration: none;
 }
 .portrait{
-    width:250px;
+    width: 162px;
+    height: 222px;
 }
+
 input{
+    border-radius: 20px;
     border: 1px solid #cccccc;
     padding:8px;
 
 }
 button{
-     cursor:pointer;
+    border-radius: 20px;
+    
+    cursor: pointer;
      border:1px solid #888888;
      background:#888888;
      color:white;
